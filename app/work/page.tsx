@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowLeft, Dot, Pointer } from "lucide-react";
+import { Dot } from "lucide-react";
 import { Roboto } from "next/font/google";
 import GoBack from "../GoBack";
 
@@ -10,12 +9,12 @@ const roboto = Roboto({
   weight: ["400"],
 });
 
-interface WorkExperience {
-  title: string;
-  company: string;
-  date: string;
-  description: string[];
-}
+// interface WorkExperience {
+//   title: string;
+//   company: string;
+//   date: string;
+//   description: string[];
+// }
 
 interface ExperienceSection {
   title: string;

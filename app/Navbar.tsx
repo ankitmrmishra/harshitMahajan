@@ -17,6 +17,7 @@ const Navbar = () => {
         <div className="flex gap-6">
           {nav.map((items, id) => (
             <Link
+              key={id}
               href={items.href}
               className={`hover:text-gray-900 transition-colors ${
                 pathname === items.href ? "text-green-600" : ""

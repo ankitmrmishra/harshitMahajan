@@ -1,7 +1,6 @@
 "use client";
-import Link from "next/link";
-import { Github, Twitter, Linkedin, ArrowUpRight } from "lucide-react";
-import { Poppins, Open_Sans, Roboto } from "next/font/google";
+
+import { Roboto } from "next/font/google";
 
 const PoppinsFont = Roboto({
   subsets: ["latin"],
