@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Harshit Mahajan",
     images: [
       {
-        url: "https://harshit-eta.vercel.app/og-image.jpg",
+        url: "https://harshit-eta.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "Harshit Mahajan - Generalist and Entrepreneur",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     title: "Harshit Mahajan - Generalist in Growth, Business, and Startups",
     description:
       "Discover Harshit Mahajan's journey in growth, business, and startups. Learn about his experiences in building India's biggest student communities and current projects.",
-    images: ["https://harshit-eta.vercel.app/og-image.jpg"],
+    images: ["https://harshit-eta.vercel.app/og-image.png"],
     creator: "@HarshitMahajan_",
   },
   robots: {
