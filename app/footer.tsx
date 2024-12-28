@@ -5,7 +5,7 @@ import { ArrowUpRight } from "lucide-react";
 const Footer = () => {
   return (
     <div className="bg-[#F9F2E3] text-[#64615B]  md:px-[24rem] px-5 py-4   ">
-      <div className="pt-8 space-y-6 animate-in fade-in slide-in-from-bottom-5 duration-1000 max-w-3xl  ">
+      <div className=" space-y-6 animate-in fade-in slide-in-from-bottom-5 duration-1000 max-w-3xl  ">
         <h2 className="text-2xl font-semibold tracking-tight text-black">
           Connect!
         </h2>
@@ -15,10 +15,11 @@ const Footer = () => {
           <p>
             You can reach me via email at →{" "}
             <Link
-              href="mailto:wh0sumit.work@gmail.com"
+              href="mailto: harshitmaj@gmail.com
+"
               className="text-green-600 hover:underline"
             >
-              ankitmishra@gmail.com
+              harshitmaj@gmail.com
             </Link>
           </p>
 
@@ -26,21 +27,21 @@ const Footer = () => {
 
           <div className="flex gap-4">
             <Link
-              href="https://twitter.com"
+              href="https://x.com/HarshitMahajan_"
               className="text-green-600 hover:underline inline-flex items-center gap-1"
               target="_blank"
             >
               Twitter <ArrowUpRight className="h-4 w-4" />
             </Link>
             <Link
-              href="https://linkedin.com/in/"
+              href=" https://www.linkedin.com/in/hm1104/ "
               className="text-green-600 hover:underline inline-flex items-center gap-1"
               target="_blank"
             >
               LinkedIn <ArrowUpRight className="h-4 w-4" />
             </Link>
             <Link
-              href="https://github.com"
+              href="https://github.com/HarshitMahajan"
               className="text-green-600 hover:underline inline-flex items-center gap-1"
               target="_blank"
             >

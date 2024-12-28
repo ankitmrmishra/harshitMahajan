@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className="md:flex gap-4 hidden">
           <Link
             className="hover:text-green-600"
-            href="https://twitter.com/wh0sumit"
+            href=" https://x.com/HarshitMahajan_"
             target="_blank"
           >
             <Twitter className="size-7" />
@@ -38,7 +38,7 @@ const Navbar = () => {
           </Link>
           <Link
             className="hover:text-green-600"
-            href="https://linkedin.com/in/wh0sumit"
+            href="https://www.linkedin.com/in/hm1104/ "
             target="_blank"
           >
             <Linkedin className="size-7" />
@@ -46,7 +46,7 @@ const Navbar = () => {
           </Link>
           <Link
             className="hover:text-green-600"
-            href="https://github.com/wh0sumit"
+            href="https://github.com/HarshitMahajan"
             target="_blank"
           >
             <Github className="size-7" />

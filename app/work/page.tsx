@@ -9,13 +9,6 @@ const roboto = Roboto({
   weight: ["400"],
 });
 
-// interface WorkExperience {
-//   title: string;
-//   company: string;
-//   date: string;
-//   description: string[];
-// }
-
 interface ExperienceSection {
   title: string;
   subtitle: string;
@@ -33,39 +26,69 @@ const experienceData: ExperienceSection[] = [
     subtitle: "My most recent professional experience",
     experiences: [
       {
-        role: "Product Engineer",
-        company: "Merlin AI",
-        date: "NOV 2024 ~ Present",
+        role: "Founder's Office: Growth & Strategic Partnerships",
+        company: "Hive School (India's First Sales School)",
+        date: "2024-Present",
         achievements: [
-          "Recently joined Merlin AI as a Product Engineer to work on their AI-powered platform",
+          "Scaled ARR from 12lakhs to 32lakhs in 1 year by working with the founder directly on partner acquisition and retention to drive revenue growth.",
+          "Streamlined all process for the Recruiter Partnerships team – TOFU Outreach, Sales Operations, Client acquisition and retention.",
+          "Standardized placement preparation modules to optimize placements rate by 30% for the cohort by working with the academic teams.",
+          "Led college activation to partner with 25+ UG colleges.",
         ],
       },
       {
-        role: "Software Engineer",
-        company: "DevDham",
-        date: "Jan 2024 ~ Oct 2024",
+        role: "Intern: Growth & Strategy",
+        company:
+          "Blue learn (College Student focused, India's biggest student community)",
+        date: "2023–24",
         achievements: [
-          "Worked as a solo frontend (web) engineer creating a complete web-based platform",
-          "Integrated product analytics tools for better understanding of user behavior",
-          "Built and shipped a complex cart-based system with\ncustomization features and Razorpay integration",
-          "Implemented internationalization and localization features",
-          "Improved platform performance, increasing Lighthouse score from 40% to 80-90%",
-          "Led migration from EJS to NextJS 14, reducing\nbuild times by 3x and deployment speed by 2x",
-          "Implemented TypeScript and React Hooks to improve code maintainability",
+          "Led the global community expansion initiative to scale the community in the Indian market and build a community in the market.",
+          "Led the GTM and expansion strategy to scale Indian community to 30,000+ active users on the newly launched app.",
+          "Activated B2B channels (college clubs) to increase user acquisition rate by 125% across (Jun-Aug) for Indian market.",
+          "Led Brand's YouTube resulting 10% subscriber increase in a span of few months.",
         ],
       },
     ],
   },
   {
-    title: "Startup Experience",
-    subtitle: "Previous startup and founding experience",
+    title: "Leadership Experience",
+    subtitle: "Roles in student organizations and communities",
+    experiences: [
+      {
+        role: "President",
+        company: "Tech Amigos",
+        date: "2023-24",
+        achievements: [
+          "Leading the club with setting up processes for a team of 22.",
+          "Doing one ever every 3 days, with guests from pan India taking session one various technologies and products.",
+          "Launching a Red-Bull powered gaming arena and club.",
+        ],
+      },
+      {
+        role: "Campus Ambassador",
+        company: "Geeks for Geeks",
+        date: "2022-24",
+        achievements: [
+          "Leading the campus community and engagement activities.",
+          "Building platforms and conducting various events for the same in online and offline mode.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Founder Experience",
+    subtitle: "Entrepreneurial ventures and initiatives",
     experiences: [
       {
         role: "Founder",
-        company: "Rightfit.so",
-        date: "Aug 2024 ~ Present",
+        company:
+          "Build Arc Labs (Building an early-stage community led start-up)",
+        date: "2024",
         achievements: [
-          "Thinking jobs differently- A platform for finding the right candidate for the right job",
+          "Aim is to build one of India's Top hacker house on an asset-lite model.",
+          "GTM: Launching 2 months personal mentorship led Startup Launchpad Program at a ticket size of 25k/user for a cohort of 30 folks.",
+          "Collaborated with 5 UG colleges and delivered workshops in 3 colleges collectively catering to 500+ students in the first year.",
+          "Working on on-boarding Industry Mentors as a part of the Founders Pod Community through cold outreach and leveraging existing networks.",
         ],
       },
     ],
@@ -74,9 +97,9 @@ const experienceData: ExperienceSection[] = [
 
 export default function WorkPage() {
   return (
-    <div className={`bg-[#F9F2E3] min-h-screen p-5 ${roboto.className}`}>
+    <div className={` min-h-screen p-3 ${roboto.className}`}>
       <GoBack />
-      <div className="max-w-3xl mx-auto pt-20">
+      <div className="max-w-3xl mx-auto md:pt-20">
         {experienceData.map((section, index) => (
           <section key={index} className="mt-12 border-b border-black py-4">
             <h2 className="text-2xl font-semibold mb-2">{section.title}</h2>
@@ -102,9 +125,10 @@ export default function WorkPage() {
                     {exp.achievements.map((achievement, achievementIndex) => (
                       <li
                         key={achievementIndex}
-                        className="text-gray-700 leading-relaxed flex justify-start align-middle items-center"
+                        className="text-gray-700 leading-relaxed flex justify-start  align-top items-start"
                       >
-                        <Dot className="text-black size-8" /> {achievement}
+                        <Dot className="text-black max-w-8 min-w-8 max-h-8 min-h-8" />{" "}
+                        {achievement}
                       </li>
                     ))}
                   </ul>
