@@ -35,23 +35,23 @@ const page = () => {
 
 export default page;
 
-interface Blogprops {
-  headline: string;
-  blog: string;
-  Date: string;
-}
+// interface Blogprops {
+//   headline: string;
+//   blog: string;
+//   Date: string;
+// }
 
-const Blog: React.FC<Blogprops> = ({ headline, blog, Date }) => {
-  return (
-    <div className="bg-[#EDD9BB] rounded-2xl md:w-96 h-80 flex flex-col justify-between align-middle items-start  p-5">
-      <div className="flex flex-col justify-between align-middle items-start gap-2">
-        <span className="font-bold text-xl text-black ">{headline}</span>
-        <p className=" text-[#64615B] leading-7">{blog}</p>
-      </div>
-      <span className=" text-[#64615B] ">{Date}</span>
-    </div>
-  );
-};
+// const Blog: React.FC<Blogprops> = ({ headline, blog, Date }) => {
+//   return (
+//     <div className="bg-[#EDD9BB] rounded-2xl md:w-96 h-80 flex flex-col justify-between align-middle items-start  p-5">
+//       <div className="flex flex-col justify-between align-middle items-start gap-2">
+//         <span className="font-bold text-xl text-black ">{headline}</span>
+//         <p className=" text-[#64615B] leading-7">{blog}</p>
+//       </div>
+//       <span className=" text-[#64615B] ">{Date}</span>
+//     </div>
+//   );
+// };
 
 // const blogs = [
 //   {
