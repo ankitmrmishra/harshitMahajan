@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://harshitmahajan.com"),
+  metadataBase: new URL("https://harshit-eta.vercel.app/"),
   alternates: {
     canonical: "/",
   },
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Harshit Mahajan - Generalist in Growth, Business, and Startups",
     description:
       "Discover Harshit Mahajan's journey in growth, business, and startups. Learn about his experiences in building India's biggest student communities and current projects.",
-    url: "https://harshitmahajan.com",
+    url: "https://harshit-eta.vercel.app/",
     siteName: "Harshit Mahajan",
     images: [
       {
